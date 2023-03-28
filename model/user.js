@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema({
         unique:true},
     phone:{type:Number,
     required:true,
-    unique:true},
+    },
     stateName:String,
     district:String,
     pincode:Number,
