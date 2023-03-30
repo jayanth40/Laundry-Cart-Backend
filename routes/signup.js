@@ -72,6 +72,7 @@ router.post("/signin", async (req, res) => {
     // Store token in HTTP-only cookie
     res.cookie("jwt", token, {
      sameSite:"none",
+      httpOnly:false
     });
   
     // Send success response
