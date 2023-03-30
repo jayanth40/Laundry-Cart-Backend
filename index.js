@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const DATABASE_URL = process.env.DATABASE_URL
 dotenv.config();
 //connect to DB
-mongoose.connect('mongodb+srv://Rohit:rohit@cluster0.vrcqw6n.mongodb.net/?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true }).
+mongoose.connect('mongodb+srv://jay:jay@cluster0.walqjnt.mongodb.net/?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true }).
 then(()=>{console.log("connected To DB")}).catch((err)=>{console.log(err);})
 
 
