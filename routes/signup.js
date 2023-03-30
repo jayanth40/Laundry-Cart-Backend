@@ -75,7 +75,7 @@ router.post("/signin", async (req, res) => {
     });
   
     // Send success response
-    if(passwordMatch){res.status(200).send("Success")}
+    if(passwordMatch){res.status(200).json({ message: "Success", token })}
     
   });
   
