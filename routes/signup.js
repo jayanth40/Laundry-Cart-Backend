@@ -83,7 +83,7 @@ router.post("/signin", async (req, res) => {
 
 // Authentication middleware
 const authMiddleware = async (req, res, next) => {
-  const token = req.cookies.jwt;
+ const token = req.headers.authorization.split(" ")[1];
 
   // If token is missing, send error response
   if (!token) {
